@@ -1,4 +1,3 @@
-import $ from "jquery";
 $(document).ready(function() {
     let score = 0;
     let timeLeft = 30;
