@@ -1,44 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-  <link rel="stylesheet" href="/src/Games/styles.css" />
-
-  <div class="main-container">
-    <h1 class="title">Juegos</h1>
-    <div class="group-container">
-      <a href="/game2">
-        <div class="game">
-          <img src="/assets/games/2.png" alt="game-2" class="photo" />
-          <h4 class="name">Encontrá los pares</h4>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery SPA with Routing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nobile:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="default-navbar">
+        <div>
+          <a href="/"
+            ><button type="button" class="text-button">Inicio</button></a
+          >
+          <a href="/group/index.html"
+            ><button type="button" class="text-button">Equipo</button></a
+          >
+          <a href="/progress/index.html"
+            ><button type="button" class="text-button">Avances</button></a
+          >
+          <a href="/games/index.html"
+            ><button type="button" class="blue-button">Juegos</button></a
+          >
         </div>
-      </a>
+      </nav>
+    </header>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
-      <a href="/game1">
-        <div class="game">
-          <img src="/assets/games/1.jpg" alt="game-1" class="photo" />
-          <h4 class="name">Wordle</h4>
-        </div>
-      </a>
+    <div class="main-container">
+      <h1 class="title">Juegos</h1>
+      <div class="group-container">
+        <a href="game2/index.html">
+          <div class="game">
+            <img src="/assets/games/2.png" alt="game-2" class="photo" />
+            <h4 class="name">Encontrá los pares</h4>
+          </div>
+        </a>
 
-      <a href="/game3">
-        <div class="game">
-          <img src="/assets/games/2.png" alt="game-3" class="photo" />
-          <h4 class="name">Nombre</h4>
-        </div>
-      </a>
+        <a href="game1/index.html">
+          <div class="game">
+            <img src="/assets/games/1.jpg" alt="game-1" class="photo" />
+            <h4 class="name">Wordle</h4>
+          </div>
+        </a>
 
-      <a href="/game4">
-        <div class="game">
-          <img src="/assets/games/2.png" alt="game-4" class="photo" />
-          <h4 class="name">Nombre</h4>
-        </div>
-      </a>
+        <a href="game3/index.html">
+          <div class="game">
+            <img src="/assets/games/2.png" alt="game-3" class="photo" />
+            <h4 class="name">Nombre</h4>
+          </div>
+        </a>
 
-      <a href="/game5">
-        <div class="game">
-          <img src="/assets/games/2.png" alt="game-5" class="photo" />
-          <h4 class="name">Nombre</h4>
-        </div>
-      </a>
+        <a href="game4/index.html">
+          <div class="game">
+            <img src="/assets/games/2.png" alt="game-4" class="photo" />
+            <h4 class="name">Nombre</h4>
+          </div>
+        </a>
+
+        <a href="game5/index.html">
+          <div class="game">
+            <img src="/assets/games/2.png" alt="game-5" class="photo" />
+            <h4 class="name">Nombre</h4>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
+    <footer class="default-footer">
+      <p class="footer-text">
+        Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
+        desarrollo Web - Grupo 2 - UADE - 2024
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,49 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <link rel="stylesheet" href="/src/Group/styles.css" />
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery SPA with Routing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nobile:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="default-navbar">
+        <div>
+          <a href="/"
+            ><button type="button" class="text-button">Inicio</button></a
+          >
+          <a href="/group/index.html"
+            ><button type="button" class="text-button">Equipo</button></a
+          >
+          <a href="/progress/index.html"
+            ><button type="button" class="text-button">Avances</button></a
+          >
+          <a href="/games/index.html"
+            ><button type="button" class="blue-button">Juegos</button></a
+          >
+        </div>
+      </nav>
+    </header>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
-  <div class="main-container">
-    <h1 class="title">El equipo</h1>
-    <div class="group-container">
-      <div class="member">
-        <img src="/assets/group/1.jpg" alt="group-1" class="photo" />
-        <h4 class="name">Agustina Montañez</h4>
-        <a href="https://atinamont2.github.io/ficha_personal/" target="_blank"
-          >Ficha personal</a
-        >
-      </div>
+    <div class="main-container">
+      <h1 class="title">El equipo</h1>
+      <div class="group-container">
+        <div class="member">
+          <img src="/assets/group/1.jpg" alt="group-1" class="photo" />
+          <h4 class="name">Agustina Montañez</h4>
+          <a href="https://atinamont2.github.io/ficha_personal/" target="_blank"
+            >Ficha personal</a
+          >
+        </div>
 
-      <div class="member">
-        <img src="/assets/group/2.png" alt="group-2" class="photo" />
-        <h4 class="name">Tomás Altrui</h4>
-        <a href="https://taltrui.github.io/FichaPersonal/" target="_blank"
-          >Ficha personal</a
-        >
-      </div>
+        <div class="member">
+          <img src="/assets/group/2.png" alt="group-2" class="photo" />
+          <h4 class="name">Tomás Altrui</h4>
+          <a href="https://taltrui.github.io/FichaPersonal/" target="_blank"
+            >Ficha personal</a
+          >
+        </div>
 
-      <div class="member">
-        <img src="/assets/group/3.jpg" alt="group-3" class="photo" />
-        <h4 class="name">Jordan Calle</h4>
-        <a href="https://jcallegit.github.io/FichaPersonal/" target="_blank"
-          >Ficha personal</a
-        >
-      </div>
+        <div class="member">
+          <img src="/assets/group/3.jpg" alt="group-3" class="photo" />
+          <h4 class="name">Jordan Calle</h4>
+          <a href="https://jcallegit.github.io/FichaPersonal/" target="_blank"
+            >Ficha personal</a
+          >
+        </div>
 
-      <div class="member">
-        <img src="/assets/group/1.jpg" alt="group-4" class="photo" />
-        <h4 class="name">Agustina Amed</h4>
-        <a href="https://atinamont2.github.io/ficha_personal/" target="_blank"
-          >Ficha personal</a
-        >
-      </div>
+        <div class="member">
+          <img src="/assets/group/1.jpg" alt="group-4" class="photo" />
+          <h4 class="name">Agustina Amed</h4>
+          <a href="https://atinamont2.github.io/ficha_personal/" target="_blank"
+            >Ficha personal</a
+          >
+        </div>
 
-      <div class="member">
-        <img src="/assets/group/1.jpg" alt="group-5" class="photo" />
-        <h4 class="name">Daniela Knoska</h4>
-        <a href="https://atinamont2.github.io/ficha_personal/" target="_blank"
-          >Ficha personal</a
-        >
+        <div class="member">
+          <img src="/assets/group/1.jpg" alt="group-5" class="photo" />
+          <h4 class="name">Daniela Knoska</h4>
+          <a href="https://atinamont2.github.io/ficha_personal/" target="_blank"
+            >Ficha personal</a
+          >
+        </div>
       </div>
     </div>
-  </div>
+    <footer class="default-footer">
+      <p class="footer-text">
+        Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
+        desarrollo Web - Grupo 2 - UADE - 2024
+      </p>
+    </footer>
+  </body>
 </html>

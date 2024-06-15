@@ -1,48 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-  <link rel="stylesheet" href="/src/Games/Game1/styles.css" />
-  <div id="game">
-    <h1 class="title">Wordle</h1>
-    <div id="board"></div>
-    <div id="result" class="result"></div>
-    <button id="reset" class="reset">Jugar de nuevo</button>
-    <div id="keyboard">
-      <div class="row">
-        <button data-key="Q">Q</button>
-        <button data-key="W">W</button>
-        <button data-key="E">E</button>
-        <button data-key="R">R</button>
-        <button data-key="T">T</button>
-        <button data-key="Y">Y</button>
-        <button data-key="U">U</button>
-        <button data-key="I">I</button>
-        <button data-key="O">O</button>
-        <button data-key="P">P</button>
-      </div>
-      <div class="row">
-        <button data-key="A">A</button>
-        <button data-key="S">S</button>
-        <button data-key="D">D</button>
-        <button data-key="F">F</button>
-        <button data-key="G">G</button>
-        <button data-key="H">H</button>
-        <button data-key="J">J</button>
-        <button data-key="K">K</button>
-        <button data-key="L">L</button>
-        <button data-key="Ñ">Ñ</button>
-      </div>
-      <div class="row">
-        <button data-key="ENTER" id="enter">↲</button>
-        <button data-key="Z">Z</button>
-        <button data-key="X">X</button>
-        <button data-key="C">C</button>
-        <button data-key="V">V</button>
-        <button data-key="B">B</button>
-        <button data-key="N">N</button>
-        <button data-key="M">M</button>
-        <button data-key="BACKSPACE" id="back">←</button>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery SPA with Routing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nobile:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="default-navbar">
+        <div>
+          <a href="/"
+            ><button type="button" class="text-button">Inicio</button></a
+          >
+          <a href="/group/index.html"
+            ><button type="button" class="text-button">Equipo</button></a
+          >
+          <a href="/progress/index.html"
+            ><button type="button" class="text-button">Avances</button></a
+          >
+          <a href="/games/index.html"
+            ><button type="button" class="blue-button">Juegos</button></a
+          >
+        </div>
+      </nav>
+    </header>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <div id="game">
+      <h1 class="title">Wordle</h1>
+      <div id="board"></div>
+      <div id="result" class="result"></div>
+      <button id="reset" class="reset">Jugar de nuevo</button>
+      <div id="keyboard">
+        <div class="row">
+          <button data-key="Q">Q</button>
+          <button data-key="W">W</button>
+          <button data-key="E">E</button>
+          <button data-key="R">R</button>
+          <button data-key="T">T</button>
+          <button data-key="Y">Y</button>
+          <button data-key="U">U</button>
+          <button data-key="I">I</button>
+          <button data-key="O">O</button>
+          <button data-key="P">P</button>
+        </div>
+        <div class="row">
+          <button data-key="A">A</button>
+          <button data-key="S">S</button>
+          <button data-key="D">D</button>
+          <button data-key="F">F</button>
+          <button data-key="G">G</button>
+          <button data-key="H">H</button>
+          <button data-key="J">J</button>
+          <button data-key="K">K</button>
+          <button data-key="L">L</button>
+          <button data-key="Ñ">Ñ</button>
+        </div>
+        <div class="row">
+          <button data-key="ENTER" id="enter">↲</button>
+          <button data-key="Z">Z</button>
+          <button data-key="X">X</button>
+          <button data-key="C">C</button>
+          <button data-key="V">V</button>
+          <button data-key="B">B</button>
+          <button data-key="N">N</button>
+          <button data-key="M">M</button>
+          <button data-key="BACKSPACE" id="back">←</button>
+        </div>
       </div>
     </div>
-  </div>
-  <script type="module" src="/src/Games/Game1/index.js"></script>
+    <script type="module" src="index.js"></script>
+    <footer class="default-footer">
+      <p class="footer-text">
+        Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
+        desarrollo Web - Grupo 2 - UADE - 2024
+      </p>
+    </footer>
+  </body>
+</html>
+
+<html lang="en">
+  <link rel="stylesheet" href="styles.css" />
 </html>

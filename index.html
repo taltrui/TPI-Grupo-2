@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery SPA with Routing</title>
-    <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -21,23 +20,36 @@
     <header>
       <nav class="default-navbar">
         <div>
-          <a href="home"
+          <a href="/"
             ><button type="button" class="text-button">Inicio</button></a
           >
-          <a href="group"
+          <a href="/group/index.html"
             ><button type="button" class="text-button">Equipo</button></a
           >
-          <a href="progress/index.html"
+          <a href="/progress/index.html"
             ><button type="button" class="text-button">Avances</button></a
           >
-          <a href="games"
+          <a href="/games/index.html"
             ><button type="button" class="blue-button">Juegos</button></a
           >
         </div>
       </nav>
     </header>
-    <main id="content"></main>
-    <script type="module" src="router.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="homeStyles.css" />
+    <div class="main-container">
+      <div class="text-container">
+        <img
+          src="/assets/home/uade-logo.png"
+          alt="uade-logo"
+          class="uade-logo"
+        />
+        <h1 class="title-text">EDUCACIÓN VIAL</h1>
+        <h4 class="desc-text">Diseño y Desarrollo Web</h4>
+        <h4 class="desc-text">Grupo 2 - Curso: 13049</h4>
+      </div>
+      <img src="/assets/home/road.png" alt="road-img" class="road-img" />
+    </div>
     <footer class="default-footer">
       <p class="footer-text">
         Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
