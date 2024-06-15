@@ -1,0 +1,83 @@
+.container {
+    text-align: center;
+    position: relative;
+}
+
+#app{
+    text-align: center;
+}
+
+#startButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#gameArea {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left, .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageButton {
+    border: none;
+    background: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.imageButton:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.correct {
+    animation: correct-animation 1s forwards;
+}
+
+@keyframes correct-animation {
+    0% { background-color: green; transform: scale(1); }
+    100% { background-color: transparent; transform: scale(1.1); }
+}
+
+.incorrect {
+    animation: incorrect-animation 1s forwards;
+}
+
+@keyframes incorrect-animation {
+    0% { background-color: red; transform: scale(1); }
+    100% { background-color: transparent; transform: scale(0.9); }
+}
+
+.win {
+    animation: win-animation 2s forwards;
+}
+
+@keyframes win-animation {
+    0% { background-color: gold; transform: scale(1); }
+    100% { background-color: transparent; transform: scale(1.1); }
+}
+
+.lose {
+    animation: lose-animation 2s forwards;
+}
+
+@keyframes lose-animation {
+    0% { background-color: darkred; transform: scale(1); }
+    100% { background-color: transparent; transform: scale(0.9); }
+}
+
+#scoreBoard, #timer {
+    margin-top: 20px;
+    font-size: 24px;
+}
