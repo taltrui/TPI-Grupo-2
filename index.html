@@ -4,10 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery SPA with Routing</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nobile:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <nav class="default-navbar">
+        <div>
+          <a href="/home"
+            ><button type="button" class="text-button">Inicio</button></a
+          >
+          <a href="/group"
+            ><button type="button" class="text-button">Equipo</button></a
+          >
+          <a href="/progress"
+            ><button type="button" class="text-button">Avances</button></a
+          >
+          <a href="/games"
+            ><button type="button" class="blue-button">Juegos</button></a
+          >
+        </div>
+      </nav>
+    </header>
     <main id="content"></main>
     <script type="module" src="router.js"></script>
+    <footer class="default-footer">
+      <p class="footer-text">
+        Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
+        desarrollo Web - Grupo 2 - UADE - 2024
+      </p>
+    </footer>
   </body>
 </html>

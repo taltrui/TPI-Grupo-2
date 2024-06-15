@@ -9,6 +9,7 @@ const pageMaps = {
   game5: "src/Games/Game5/index.html",
   group: "src/Group/index.html",
   games: "src/Games/index.html",
+  progress: 'src/Progress/index.html',
 };
 
 $(function () {
