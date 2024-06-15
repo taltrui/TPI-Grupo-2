@@ -5,10 +5,31 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="/src/Games/Game2/styles.css">
   </head>
   <body>
     <div id="app">
-      <h1>Game 2</h1>
+      <h1>¡Bienvenido a nuestro cuestionario didáctico!<br>¡Haz clic en el botón para empezar el juego!</h1>
     </div>
+    <div class="container">
+      <button id="startButton">Empezar el juego</button>
+      <div>
+        <h1 id="questionText">En base a la imagen de la izquierda, elija la mejor opción de la derecha</h1>
+      </div>
+      <div id="gameArea" style="display: none;">
+          <div class="left">
+              <img id="mainImage" src="" alt="Main Image">
+          </div>
+          <div class="right">
+              <button class="imageButton" id="option1"><img src="" alt="Option 1"></button>
+              <button class="imageButton" id="option2"><img src="" alt="Option 2"></button>
+          </div>
+      </div>
+      
+      <div id="scoreBoard" style="display: none;">Puntuación: 0</div>
+      <div id="timer" style="display: none;">Tiempo: 30</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="/src/Games/Game2/index.js"></script>
   </body>
 </html>
