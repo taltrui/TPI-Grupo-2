@@ -1,0 +1,52 @@
+[
+    {
+        "question": "¿Cuál es la velocidad máxima permitida en una zona urbana?",
+        "options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+        "answer": "60 km/h"
+    },
+    {
+        "question": "¿Qué color de luz del semáforo indica que puede avanzar?",
+        "options": ["Rojo", "Amarillo", "Verde", "Azul"],
+        "answer": "Verde"
+    },
+    {
+        "question": "¿Qué debe hacer si un peatón está cruzando la calle por un cruce peatonal?",
+        "options": ["Acelerar", "Tocar la bocina", "Detenerse", "Cambiar de carril"],
+        "answer": "Detenerse"
+    },
+    {
+        "question": "¿Qué documento es obligatorio llevar al conducir?",
+        "options": ["Pasaporte", "Licencia de conducir", "Tarjeta de crédito", "Carnet de estudiante"],
+        "answer": "Licencia de conducir"
+    },
+    {
+        "question": "¿Cuál es la prioridad de paso en una rotonda?",
+        "options": ["El que viene por la derecha", "El que entra primero", "El que viene por la izquierda", "El que ya está en la rotonda"],
+        "answer": "El que ya está en la rotonda"
+    },
+    {
+        "question": "¿Qué significa una señal de tránsito con un círculo rojo y una barra diagonal blanca?",
+        "options": ["Permitido estacionar", "Prohibido estacionar", "Estacionamiento exclusivo", "Zona de carga y descarga"],
+        "answer": "Prohibido estacionar"
+    },
+    {
+        "question": "¿En qué casos se puede cruzar un semáforo en rojo?",
+        "options": ["En ningún caso", "Cuando no hay tráfico", "De noche", "En emergencias"],
+        "answer": "En ningún caso"
+    },
+    {
+        "question": "¿Cuál es la edad mínima para obtener una licencia de conducir en Buenos Aires?",
+        "options": ["16 años", "17 años", "18 años", "19 años"],
+        "answer": "18 años"
+    },
+    {
+        "question": "¿Qué debe hacer si ve una señal de tránsito que indica 'Ceda el paso'?",
+        "options": ["Acelerar", "Detenerse por completo", "Reducir la velocidad y ceder el paso", "Ignorar la señal"],
+        "answer": "Reducir la velocidad y ceder el paso"
+    },
+    {
+        "question": "¿Cuál es el límite de alcohol en sangre permitido para conducir?",
+        "options": ["0.0 g/l", "0.2 g/l", "0.5 g/l", "1.0 g/l"],
+        "answer": "0.5 g/l"
+    }
+]
