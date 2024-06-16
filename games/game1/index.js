@@ -18,7 +18,7 @@ const WORDS = [
 
 $(function () {
   const WORD = WORDS[Math.floor(Math.random() * WORDS.length)];
-  console.log(WORD)
+
   const MAX_ATTEMPTS = 6;
   let currentAttempt = 0;
   let currentGuess = "";
