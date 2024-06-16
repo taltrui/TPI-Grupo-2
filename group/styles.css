@@ -40,9 +40,7 @@
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   padding: 32px 16px;
   border-radius: 8px;
-  &:first-child {
-    margin-left: 0;
-  }
+
 }
 
 .name {
@@ -51,4 +49,13 @@
 
 .title {
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 720px) {
+  .member {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 300px;
+  }
 }

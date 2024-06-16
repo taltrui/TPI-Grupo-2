@@ -21,6 +21,12 @@
   margin-bottom: auto;
 }
 
+.links-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex: 1;
+}
 .photo {
   height: 200px;
   border-radius: 8px;
@@ -63,4 +69,10 @@
 
 .desc-text {
   padding: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    width: initial;
+  }
 }

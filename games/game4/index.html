@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juego 4 - Grupo 2</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nobile:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="default-navbar">
-        <div>
-          <a href="/TPI-Grupo-2/"
-            ><button type="button" class="text-button">Inicio</button></a
-          >
-          <a href="/TPI-Grupo-2/group/index.html"
-            ><button type="button" class="text-button">Equipo</button></a
-          >
-          <a href="/TPI-Grupo-2/progress/index.html"
-            ><button type="button" class="text-button">Avances</button></a
-          >
-          <a href="/TPI-Grupo-2/games/index.html"
-            ><button type="button" class="blue-button">Juegos</button></a
-          >
-        </div>
-      </nav>
-    </header>
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="./styles.css" />
 
-    <script type="module" src="index.js"></script>
-    <footer class="default-footer">
-      <p class="footer-text">
-        Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
-        desarrollo Web - Grupo 2 - UADE - 2024
-      </p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia-lidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nobile:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="default-navbar">
+      <div>
+        <a href=" /"><button type="button" class="text-button">Inicio</button></a>
+        <a href=" /group/index.html"><button type="button" class="text-button">Equipo</button></a>
+        <a href=" /progress/index.html"><button type="button" class="text-button">Avances</button></a>
+        <a href=" /games/index.html"><button type="button" class="blue-button">Juegos</button></a>
+      </div>
+    </nav>
+  </header>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <div class="header-container">
+
+    <div id="container">
+      <h3>¡Alto ahi! Ponte a prueba</h3>
+      <div id="quiz"></div>
+      <div id="score" class="animate__animated"></div>
+      <div id="timer">
+        Tiempo restante: ⏱ <span id="time">60</span>
+      </div>
+    </div>
+
+  </div>
+  <script type="module" src="index.js"></script>
+
+
+  <footer class="default-footer">
+    <p class="footer-text">
+      Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
+      desarrollo Web - Grupo 2 - UADE - 2024
+    </p>
+  </footer>
+
+</body>
+
 </html>
