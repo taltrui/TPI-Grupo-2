@@ -17,6 +17,7 @@ $(document).ready(function() {
     }
 
     function createQuiz() {
+        $('#quiz').empty();
         questions.forEach((q, index) => {
             const questionHtml = `
                 <div class="question" id="question-${index}">
@@ -34,6 +35,20 @@ $(document).ready(function() {
     function showScore() {
         $('#quiz').hide();
         $('#score').text(`Tu puntaje es: ${score} de ${questions.length}`).fadeIn().addClass('animate__bounceIn');
+        $('#restart-btn').show();
+    }
+
+    function restartQuiz() {
+        clearInterval(timerInterval);
+        currentQuestionIndex = 0;
+        score = 0;
+        timeLeft = 60;
+        $('#time').text(timeLeft);
+        $('#score').hide();
+        $('#restart-btn').hide();
+        $('#quiz').show();
+        createQuiz();
+        startTimer();
     }
 
     $('#quiz').on('click', '.option', function() {
@@ -57,6 +72,10 @@ $(document).ready(function() {
                 }
             });
         }, 1000); 
+    });
+
+    $('#restart-btn').click(function() {
+        restartQuiz();
     });
 
     fetch('questions.json')

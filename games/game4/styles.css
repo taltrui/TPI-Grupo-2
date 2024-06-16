@@ -46,7 +46,6 @@
     color: #c62828;
 }
 #timer {
-   
     margin: 20px 0;
     top: 10px;
     right: 10px;
@@ -66,4 +65,27 @@
 }
 .animate__animated {
     animation-duration: 0.5s;
+}
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    border-radius: 50px;
+    display: none;
+}
+
+#restart-btn:hover {
+    background-color: #e64a19;
+}
+
+.restart-btn-container {
+    background-color: transparent;
+    width: 100%;
+    border-radius: 50px;
 }
