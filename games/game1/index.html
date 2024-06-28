@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="game-body">
     <header>
       <nav class="default-navbar">
         <div>
@@ -40,9 +40,9 @@
 
     <div id="game">
       <h1 class="title">Wordle</h1>
+      <h2 class="title">¡Adiviná la palabra!</h2>
       <div id="board"></div>
       <div id="result" class="result"></div>
-      <button id="reset" class="reset">Jugar de nuevo</button>
       <div id="keyboard">
         <div class="row">
           <button data-key="Q">Q</button>
@@ -69,7 +69,7 @@
           <button data-key="Ñ">Ñ</button>
         </div>
         <div class="row">
-          <button data-key="ENTER" id="enter">↲</button>
+          <button data-key="ENTER" id="enter">ENTER</button>
           <button data-key="Z">Z</button>
           <button data-key="X">X</button>
           <button data-key="C">C</button>
@@ -80,7 +80,39 @@
           <button data-key="BACKSPACE" id="back">←</button>
         </div>
       </div>
+      <div class="action-buttons">
+        <button class="action-button" id="reset">Reiniciar</button>
+        <button class="action-button" id="instructions">Instrucciones</button>
+      </div>
     </div>
+    <div id="backdrop" class="backdrop hide"></div>
+    <dialog id="instructions-dialog" class="dialog hide">
+      <button class="close-button" id="close-instructions">X</button>
+      <h2>Como jugar</h2>
+      <p>
+        Adivina la palabra en 6 intentos. Cada intento te dará una pista de
+        cuántas letras de la palabra son correctas.
+      </p>
+
+      <div class="tile-container">
+        <div class="tile absent example-tile">R</div>
+        <p>ROJO significa que la letra letra NO está presente en la palabra.</p>
+      </div>
+      <div class="tile-container">
+        <div class="tile present example-tile">R</div>
+        <p>
+          AMARILLO significa que la letra letra está presente en la palabra pero
+          en la posición INCORRECTA.
+        </p>
+      </div>
+      <div class="tile-container">
+        <div class="tile correct example-tile">R</div>
+        <p>
+          VERDE significa que la letra está en la palabra y en la posición
+          CORRECTA.
+        </p>
+      </div>
+    </dialog>
     <script type="module" src="./index.js"></script>
     <footer class="default-footer">
       <p class="footer-text">

@@ -17,6 +17,10 @@ const WORDS = [
 ];
 
 $(function () {
+  if (!window.localStorage.getItem("instructions-closed")) {
+    showInstructions();
+  }
+
   const WORD = WORDS[Math.floor(Math.random() * WORDS.length)];
 
   const MAX_ATTEMPTS = 6;
@@ -35,6 +39,23 @@ $(function () {
 
   function resetGame() {
     location.reload();
+  }
+
+  function showInstructions() {
+    $("#instructions-dialog").removeClass("hide");
+    $("#backdrop").removeClass("hide");
+  }
+
+  function hideInstructions() {
+    $("#instructions-dialog").addClass("hide");
+    $("#backdrop").addClass("hide");
+    window.localStorage.setItem("instructions-closed", true);
+  }
+
+  function bindFunctions() {
+    $("#reset").on("click", resetGame);
+    $("#instructions").on("click", showInstructions);
+    $("#close-instructions").on("click", hideInstructions);
   }
 
   function updateBoard() {
@@ -84,7 +105,7 @@ $(function () {
       result.append(`<p>La palabra era: ${WORD}</p>`);
       const reset = $("#reset");
       reset.addClass("show");
-      reset.on("click", resetGame)
+      reset.on("click", resetGame);
     }
 
     if (currentGuess === WORD) {
@@ -93,7 +114,7 @@ $(function () {
       result.append(`<p>¡Ganaste!</p>`);
       const reset = $("#reset");
       reset.addClass("show");
-      reset.on("click", resetGame)
+      reset.on("click", resetGame);
     }
   }
 
@@ -130,5 +151,6 @@ $(function () {
     handleKey(key);
   });
 
+  bindFunctions();
   createBoard();
 });

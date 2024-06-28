@@ -63,6 +63,16 @@ button {
   display: flex;
   justify-content: flex-end;
   padding: 12px;
+  background-color: white;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: auto;
+  padding: 0;
 }
 
 .default-footer {
