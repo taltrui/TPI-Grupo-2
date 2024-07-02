@@ -57,6 +57,7 @@ $(function () {
     $("#reset").on("click", resetGame);
     $("#instructions").on("click", showInstructions);
     $("#close-instructions").on("click", hideInstructions);
+    $("#close-moda-button").on("click", hideInstructions);
   }
 
   function updateBoard() {
