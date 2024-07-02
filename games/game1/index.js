@@ -23,6 +23,7 @@ $(function () {
 
   const WORD = WORDS[Math.floor(Math.random() * WORDS.length)];
 
+  let finished = false;
   const MAX_ATTEMPTS = 6;
   let currentAttempt = 0;
   let currentGuess = "";
@@ -101,20 +102,23 @@ $(function () {
     if (currentAttempt === MAX_ATTEMPTS - 1 && currentGuess !== WORD) {
       const result = $("#result");
       result.addClass("lost show");
-      result.append(`<p>¡Perdiste!</p>`);
-      result.append(`<p>La palabra era: ${WORD}</p>`);
-      const reset = $("#reset");
+      result.append(`<h2>¡Perdiste!</h2>`);
+      result.append(`<p>La palabra es: <b>${WORD}</b></p>`);
+      const reset = $("#play-again");
       reset.addClass("show");
       reset.on("click", resetGame);
+      finished = true;
     }
 
     if (currentGuess === WORD) {
       const result = $("#result");
       result.addClass("won show");
-      result.append(`<p>¡Ganaste!</p>`);
-      const reset = $("#reset");
+      result.append(`<h2>¡Ganaste!</h2>`);
+      result.append(`<p>La palabra es: <b>${WORD}</b></p>`);
+      const reset = $("#play-again");
       reset.addClass("show");
       reset.on("click", resetGame);
+      finished = true;
     }
   }
 
@@ -123,6 +127,7 @@ $(function () {
   }
 
   function handleKey(key) {
+    if (finished) return;
     if (disabledKeys.includes(key)) return;
     if (key === "ENTER") {
       if (currentGuess.length === 5) {
