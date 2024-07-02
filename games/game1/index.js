@@ -45,11 +45,13 @@ $(function () {
   function showInstructions() {
     $("#instructions-dialog").removeClass("hide");
     $("#backdrop").removeClass("hide");
+    $("body").addClass("no-scroll");
   }
 
   function hideInstructions() {
     $("#instructions-dialog").addClass("hide");
     $("#backdrop").addClass("hide");
+    $("body").removeClass("no-scroll");
     window.localStorage.setItem("instructions-closed", true);
   }
 
